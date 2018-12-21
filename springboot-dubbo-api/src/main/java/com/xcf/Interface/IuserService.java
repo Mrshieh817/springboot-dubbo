@@ -9,4 +9,6 @@ import com.xcf.model.User;
 
 public interface IuserService {
 	public User getuserinfo(String username);
+
+	public String ni();
 }

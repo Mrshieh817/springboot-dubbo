@@ -21,7 +21,7 @@ public class HelloController {
 	@RequestMapping("/test")
 	@ResponseBody
 	public Object test() {
-		User user= iuserService.getuserinfo("hello world!!!!");
+		User user= iuserService.getuserinfo("hello world,这是测试!!!!");
 		return user;
 
 	}
