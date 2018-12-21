@@ -28,7 +28,7 @@ public class UserService implements IuserService {
 	public User getuserinfo(@PathParam("username") String username) {
 		User mo = new User();
 		mo.setID("100010");
-		mo.setName(username);
+		mo.setName("大飞是我爸爸"+username);
 		return mo;
 	}
 	
