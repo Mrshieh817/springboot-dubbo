@@ -1,10 +1,12 @@
 package com.xcf.Controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.xcf.Imp.UserImp;
 import com.xcf.Interface.IuserService;
 import com.xcf.model.User;
 
@@ -15,13 +17,13 @@ import com.xcf.model.User;
 @Controller
 @RequestMapping("/hello")
 public class HelloController {
-	@Reference(version = "1.0.0")
-	private IuserService iuserService;
+	@Autowired
+	private UserImp iuserService;
 
 	@RequestMapping("/test")
 	@ResponseBody
 	public Object test() {
-		User user= iuserService.getuserinfo("hello world,这是测试!!!!");
+		 Object user= iuserService.test();
 		return user;
 
 	}

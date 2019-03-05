@@ -4,11 +4,13 @@
 	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	<dubbo:application name="igxe-Cunstormer"/>
-	<dubbo:registry address="zookeeper://172.16.13.37:2181"/>
+	<dubbo:registry address="zookeeper://172.16.15.149:2181"/>
 <!-- 	<dubbo:registry address="zookeeper://172.16.12.118:2181"/> -->
 	<dubbo:annotation package="com.xcf.IMP" />
 	<!-- 引用的服务 -->
 	<dubbo:consumer timeout="5000" />
+	 <!-- 监控中心配置，protocol="registry"，表示从注册中心发现监控中心地址 -->  
+    <dubbo:monitor protocol="registry"/>  
 	<!-- 采用直连，不使用注册中心 -->
 <!--     <dubbo:registry address="N/A" /> -->
 </beans>
