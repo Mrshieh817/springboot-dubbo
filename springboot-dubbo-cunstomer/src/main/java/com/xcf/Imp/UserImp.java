@@ -13,7 +13,7 @@ import com.xcf.model.User;
 */
 @Component
 public class UserImp {
-	@Reference(version = "1.0.0")
+	@Reference(version = "1.0.0",group="xcf1")
 	 IuserService iuserService;
 	
 	public Object test() {

@@ -10,7 +10,7 @@ import com.xcf.model.User;
  * @version 创建时间：2018年7月4日 上午10:48:51 类说明
  */
 
-@Service(version="1.0.0")
+@Service(version="1.0.0",group="xcf")
 public class UserService implements IuserService {
 	@Override
 	public User getuserinfo(@PathParam("username") String username) {
