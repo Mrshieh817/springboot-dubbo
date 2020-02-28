@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @ComponentScan(value = "com.xcf")
-@ImportResource(value = {"classpath:providers.xml"})
+//@ImportResource(value = {"classpath:providers.xml"})  // subbo服务配置，可以用此方式加载xml，也可以在properties加载
 public class Provider1Application extends SpringBootServletInitializer  {
 
 	public static void main(String[] args) {

@@ -9,7 +9,7 @@ import com.xcf.model.User;
 /**
 * @author 作者:大飞
 * @version 创建时间：2019年2月27日 下午12:19:07
-* 类说明
+* group 用于区分，一个接口多个实现，消费者可以通过group调用相应的接口实现
 */
 @Component
 public class UserImp {

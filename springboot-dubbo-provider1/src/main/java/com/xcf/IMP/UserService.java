@@ -7,7 +7,8 @@ import com.xcf.model.User;
 
 /**
  * @author 作者:大飞
- * @version 创建时间：2018年7月4日 上午10:48:51 类说明
+ * @version 创建时间：2018年7月4日 上午10:48:51 
+ * group 用于区分，一个接口多个实现，消费者可以通过group调用相应的接口实现
  */
 
 @Service(version="1.0.0",group="xcf1")
