@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ComponentScan(value = "com.xcf")
-@ImportResource(value = {"classpath:providers.xml"})
+//@ImportResource(value = {"classpath:providers.xml"})
 public class ProviderApplication extends SpringBootServletInitializer  {
 
 	public static void main(String[] args) {

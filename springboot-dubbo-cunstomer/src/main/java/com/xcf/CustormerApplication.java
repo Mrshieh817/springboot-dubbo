@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ComponentScan(value = "com.xcf")
-@ImportResource(value = {"classpath:Custormer.xml"})
+//@ImportResource(value = {"classpath:Custormer.xml"})
 public class CustormerApplication  extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
